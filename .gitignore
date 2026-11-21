@@ -1,0 +1,21 @@
+# Generated dependencies and build output
+node_modules/
+dist/
+target/
+apps/desktop/src-tauri/gen/
+
+# Machine-local editor state and data
+.idea/
+.vscode/
+*.log
+.env
+.env.*
+!.env.example
+!.env.sample
+*.db
+*.db-*
+*.sqlite
+*.sqlite3
+*.sqlite-*
+*.sqlite3-*
+.DS_Store

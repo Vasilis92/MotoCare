@@ -1,0 +1,37 @@
+MVP 1 - Local Solo Rider
+
+Add a bike profile (name, model, odometer).
+
+Track key parts: oil, chain, tires, clutch.
+
+Log maintenance events (date, odometer, action, notes).
+
+Show simple reminder status: OK / Due Soon / Overdue based on odometer.
+
+Data stored locally (SQLite or even JSON file).
+
+Export/import data as CSV.
+
+
+MVP 2 - Connected Rider
+
+Installable PWA (works on mobile & desktop).
+
+Sync data with Google Sheets (backup & view outside app).
+
+Local notifications: "Oil due soon" or "Chain clean overdue."
+
+Dashboard: one-glance view of all parts + next service km.
+
+
+MVP 3 - Community Rider
+
+Multi-bike support (switch between bikes).
+
+Share/export service history for selling bike or insurance.
+
+Cloud sync option (Supabase/Firebase) instead of only Sheets.
+
+Custom parts (beyond oil/chain/tires/clutch).
+
+Reminders by time as well as mileage (e.g., tire check every 6 months).

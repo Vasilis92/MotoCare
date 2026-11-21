@@ -1,0 +1,20 @@
+version = 1
+identifier = "sql:default"
+description = "Allow SQLite access for app.db during development"
+windows = ["main"]
+webviews = ["main"]
+
+# Allow opening any sqlite URL (simple for dev)
+[[permissions]]
+identifier = "sql:allow-load"
+resources = ["*"]
+
+# Allow SELECT
+[[permissions]]
+identifier = "sql:allow-select"
+resources = ["*"]
+
+# Allow INSERT/UPDATE/DELETE/CREATE/etc.
+[[permissions]]
+identifier = "sql:allow-execute"
+resources = ["*"]

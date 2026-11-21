@@ -1,0 +1,23 @@
+{
+  "private": true,
+  "name": "motocare",
+  "packageManager": "pnpm@9",
+  "workspaces": [
+    "apps/*",
+    "packages/*"
+  ],
+  "scripts": {
+    "build": "pnpm -r build",
+    "lint": "pnpm -r lint",
+    "dev:desktop": "pnpm -C apps/desktop dev",
+    "dev:mobile:web": "pnpm -C apps/mobile start"
+  },
+  "devDependencies": {
+    "@tauri-apps/cli": "^2.8.4"
+  },
+  "dependencies": {
+     "@moto/storage-sqlite-tauri": "workspace:*",
+    "@tauri-apps/api": "^2.8.0",
+    "@tauri-apps/plugin-sql": "^2.3.0"
+  }
+}
